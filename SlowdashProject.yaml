@@ -1,0 +1,12 @@
+slowdash_project:
+  name: SlowDash_Iseg
+  title: SLowDash Iseg
+
+  data_source:
+    url: sqlite:///iseg.db
+    time_series:
+      schema: data [channel] @timestamp(unix) = value
+
+  task:
+    name: iseg
+    auto_load: true
